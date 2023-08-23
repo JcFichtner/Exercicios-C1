@@ -1,0 +1,71 @@
+Escreva uma função Linha() que, usando um único cout e sem usar repetições ou
+saltos de linha, produza uma linha de tamanho fixo formada por 10 caracteres de
+hífen. Escreva também uma função Pequena(), Media() e Grande() que façam uso
+da função Linha() e de saltos de linha para obter linhas com 10, 20 e 30 hifens
+respectivamente. O programa deve produzir a saída abaixo. A função Linha() não
+deve ser chamada diretamente pela função main(), apenas Pequena(), Media() e
+Grande() devem fazer uso dela.
+
+----------
+--------------------
+------------------------------
+Programação de Computadores
+------------------------------
+--------------------
+----------
+
+#include <iostream>
+using namespace std;
+
+void linha();
+void pequena();
+void media();
+void grande();
+
+void linha()
+{
+
+	cout << "----------";
+
+
+}
+
+void pequena()
+{
+
+	linha();
+	
+	cout << endl;
+
+}
+
+void media()
+{
+
+	linha(); linha();
+
+	cout << endl;
+
+}
+
+void grande()
+{
+    
+	linha(); linha(); linha();
+
+	cout << endl;
+
+}
+
+int main()
+{
+
+	pequena(); 
+	media();
+	grande();
+	cout << "Eu Amo Programacao" << endl;
+	grande();
+	media();
+	pequena();
+
+}
