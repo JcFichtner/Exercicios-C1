@@ -1,0 +1,29 @@
+Escreva um programa que produza a saída abaixo. Para atingir esse objetivo crie
+uma função que exiba “Sorria!” uma única vez e chame-a na função principal
+quantas vezes for preciso para gerar a saída.
+
+Sorria! Sorria! Sorria! Sorria!
+Sorria! Sorria!
+Sorria!
+
+Dica: o salto de linha não pode estar dentro da função.
+
+#include <iostream>
+
+using namespace std;
+
+	void sorria()
+	{
+		cout << "Sorria!";
+	}
+
+	int main()
+	{
+		
+		sorria(); sorria(); sorria(); sorria();
+		cout << endl;
+		sorria(); sorria();
+		cout << endl;
+		sorria();
+
+	}
